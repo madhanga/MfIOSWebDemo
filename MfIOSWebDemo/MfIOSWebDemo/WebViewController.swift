@@ -65,8 +65,10 @@ class WebViewController: UIViewController {
         }
         var customRequest = URLRequest(url: url)
         //customRequest.setValue(token, forHTTPHeaderField: "X-Token")
-        customRequest.setValue(token, forHTTPHeaderField: "X-authToken")
-        customRequest.setValue("sparkiOS", forHTTPHeaderField: "X-platform")
+        //customRequest.setValue(token, forHTTPHeaderField: "X-authToken")
+        customRequest.setValue(token, forHTTPHeaderField: "authtoken")
+        customRequest.setValue("sparkiOS", forHTTPHeaderField: "platform")
+       // customRequest.setValue("sparkiOS", forHTTPHeaderField: "X-platform")
 //        customRequest.setValue(token, forHTTPHeaderField: "Authorization")
         customRequest.httpShouldHandleCookies = true
         self.webView = WKWebView(frame: .zero, configuration: webViewConfig)

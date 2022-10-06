@@ -118,6 +118,7 @@ extension ViewController :SFSafariViewControllerDelegate {
 struct AppConstant {
     static let uatBuntyToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY1NjUwNjAsInVzZXJEYXRhIjp7InVzZXJfaWQiOiJCNTM1ODYifX0.aFfuu4P9H6spjCQjDGCCnF2WC7lx7A8wu4fPQ1i8bXs"
     static let cugBuntyToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY1NjQ5MzAsInVzZXJEYXRhIjp7InVzZXJfaWQiOiJCNTM1ODYifX0._HEOXY3IqDEreiLOvDS2hJTQQMr5o9l8ZPKXuYyK-44"
-    static let uatURL = "https://web-mf-uat.angelbroking.com/mutual-funds/discoverfunds"
+   // static let uatURL = "https://web-mf-uat.angelbroking.com/mutual-funds/discoverfunds"
+    static let uatURL = "https://uat.angelone.in/mutual-funds/discoverfunds"
     static let cugURL = "https://web-mf-cug.angelbroking.com/mutual-funds/discoverfunds"
 }
