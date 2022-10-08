@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         tf_token.delegate = self
         setPlaceholderLabel()
         setRadioBtn()
+        addDoneButtonOnKeyboard()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -117,13 +118,31 @@ class ViewController: UIViewController {
     
     func setPlaceholderLabel() {
         placeholderLabel = UILabel()
-        placeholderLabel.text = "enter token"
+        placeholderLabel.text = "Enter token"
         placeholderLabel.font = .italicSystemFont(ofSize: (tf_token.font?.pointSize)!)
         placeholderLabel.sizeToFit()
         tf_token.addSubview(placeholderLabel)
         placeholderLabel.frame.origin = CGPoint(x: 5, y: (tf_token.font?.pointSize)! / 2)
         placeholderLabel.textColor = .tertiaryLabel
         placeholderLabel.isHidden = !tf_token.text.isEmpty
+    }
+    
+    func addDoneButtonOnKeyboard(){
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        doneToolbar.barStyle = .default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+        
+        let items = [flexSpace, done]
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        tf_token.inputAccessoryView = doneToolbar
+    }
+    
+    @objc func doneButtonAction(){
+        tf_token.resignFirstResponder()
     }
     
     func setRadioBtn() {

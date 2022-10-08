@@ -163,6 +163,7 @@ extension WebViewController: WKUIDelegate {
     
     func webViewDidClose(_ webView: WKWebView) {
         webView.removeFromSuperview()
+        customPopup?.removeFromSuperview()
         popupWebView = nil
         backbtn = nil
         customPopup = nil
