@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EBE12A228F19F7F00C0EB29 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE12A128F19F7F00C0EB29 /* WebViewController.swift */; };
 		9ECC723C28F12806003C0372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC723B28F12806003C0372 /* AppDelegate.swift */; };
 		9ECC723E28F12806003C0372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC723D28F12806003C0372 /* SceneDelegate.swift */; };
 		9ECC724028F12806003C0372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC723F28F12806003C0372 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9EBE12A128F19F7F00C0EB29 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9ECC723828F12806003C0372 /* MfIOSWebDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MfIOSWebDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECC723B28F12806003C0372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ECC723D28F12806003C0372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		9ECC723A28F12806003C0372 /* MfIOSWebDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9EBE12A128F19F7F00C0EB29 /* WebViewController.swift */,
 				9ECC723B28F12806003C0372 /* AppDelegate.swift */,
 				9ECC723D28F12806003C0372 /* SceneDelegate.swift */,
 				9ECC723F28F12806003C0372 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				9ECC724028F12806003C0372 /* ViewController.swift in Sources */,
 				9ECC723C28F12806003C0372 /* AppDelegate.swift in Sources */,
 				9ECC723E28F12806003C0372 /* SceneDelegate.swift in Sources */,
+				9EBE12A228F19F7F00C0EB29 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

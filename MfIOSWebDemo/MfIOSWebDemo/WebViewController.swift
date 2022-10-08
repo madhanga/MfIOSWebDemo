@@ -32,6 +32,21 @@ class WebViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        setupUI()
+    }
+    
+    func setupUI() {
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            webView.topAnchor
+                .constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            webView.leftAnchor
+                .constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor),
+            webView.bottomAnchor
+                .constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+            webView.rightAnchor
+                .constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor)
+        ])
     }
     
     func setupWebView() {
@@ -70,7 +85,7 @@ class WebViewController: UIViewController {
         webView.configuration.preferences = preferences
 
 		self.view.addSubview(self.webView)
-        self.webView.frame = self.view.bounds
+        //self.webView.frame = self.view.frame
     }
     
     ///Generates script to create given cookies
