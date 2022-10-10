@@ -50,13 +50,13 @@ class WebViewController: UIViewController {
     }
     
     func setupWebView() {
-       
+       /*
         let userContentController = WKUserContentController()
         if let cookies = HTTPCookieStorage.shared.cookies {
             let script = getJSCookiesString(for: cookies)
             let cookieScript = WKUserScript(source: script, injectionTime: .atDocumentStart, forMainFrameOnly: false)
             userContentController.addUserScript(cookieScript)
-        }
+        }*/
         
         let preferences = WKPreferences()
         preferences.javaScriptEnabled = true
@@ -87,7 +87,7 @@ class WebViewController: UIViewController {
 		self.view.addSubview(self.webView)
         //self.webView.frame = self.view.frame
     }
-    
+    /*
     ///Generates script to create given cookies
     public func getJSCookiesString(for cookies: [HTTPCookie]) -> String {
         var result = ""
@@ -106,7 +106,7 @@ class WebViewController: UIViewController {
             result += "'; "
         }
         return result
-    }
+    }*/
     
     func createButton() -> UIButton {
         let backBtn = UIButton(type: .custom)
